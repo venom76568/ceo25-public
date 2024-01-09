@@ -1,7 +1,9 @@
+import logo from "./logo.svg";
 import "./App.css";
 import About from "./components/About";
-import Timeline from "./components/Timeline";
 import Hero from "./components/Hero";
+import Timeline from "./components/Timeline1";
+// import Timeline1 from './components/Time';
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Hero />
       <About />
       <Timeline />
+      {/* <Timeline1/> */}
     </div>
   );
 }
