@@ -2,20 +2,22 @@
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
 import Hero from "./components/Hero1";
-import AboutSection from "./components/About1";
+import About from "./components/About";
 import Timeline from "./components/Timeline1";
 import SignUpForm from "./components/Form";
 import Accordion from "./components/Faq";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
       <Hero/>
-      <AboutSection/>
+      <About/>
       <Timeline/>
-      <SignUpForm/>
       <Accordion/>
-      {/* <Footer/> */}
+      <SignUpForm/>
+      
+      <Footer/>
     </BrowserRouter>
   );
 };
