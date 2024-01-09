@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import About from './components/About';
-import Hero from './components/Hero';
-import Timeline from './components/Timeline1';
-import SignUpForm from './components/Form';
-import Accordion from './components/Faq';
-// import Timeline1 from './components/Time';
+
+import React from "react";
+import {BrowserRouter} from "react-router-dom";
+import Hero from "./components/Hero1";
+import AboutSection from "./components/About1";
+import Timeline from "./components/Timeline1";
+import SignUpForm from "./components/Form";
+import Accordion from "./components/Faq";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Hero/>
-      <About />
-      <Timeline />
-      {/* <Timeline1/> */}
-      <Accordion/>
+      <AboutSection/>
+      <Timeline/>
       <SignUpForm/>
-    </div>
+      <Accordion/>
+      {/* <Footer/> */}
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
