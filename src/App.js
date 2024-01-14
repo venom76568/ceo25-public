@@ -7,6 +7,7 @@ import Timeline from "./components/Timeline1";
 import SignUpForm from "./components/Form";
 import Accordion from "./components/Faq";
 import Footer from "./components/Footer";
+import NewCard from "./components/NewCard";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Timeline/>
       <Accordion/>
       <SignUpForm/>
-      
+      {/* <NewCard /> */}
       <Footer/>
     </BrowserRouter>
   );

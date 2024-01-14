@@ -10,11 +10,11 @@ const SignUpForm = () => {
       <div className="grid gap-6 mb-6 md:grid-cols-2">
         {[
           { id: 'first_name', label: 'First name', type: 'text', placeholder: 'John', required: true },
-          { id: 'last_name', label: 'Last name', type: 'text', placeholder: 'Doe', required: true },
-          { id: 'company', label: 'Company', type: 'text', placeholder: 'Flowbite', required: true },
+          // { id: 'last_name', label: 'Last name', type: 'text', placeholder: 'Doe', required: true },
+          // { id: 'company', label: 'Company', type: 'text', placeholder: 'Flowbite', required: true },
           { id: 'phone', label: 'Phone number', type: 'tel', placeholder: '123-45-678', pattern: '[0-9]{3}-[0-9]{2}-[0-9]{3}', required: true },
-          { id: 'website', label: 'Website URL', type: 'url', placeholder: 'flowbite.com', required: true },
-          { id: 'visitors', label: 'Unique visitors (per month)', type: 'number', placeholder: '', required: true },
+          // { id: 'website', label: 'Website URL', type: 'url', placeholder: 'flowbite.com', required: true },
+          // { id: 'visitors', label: 'Unique visitors (per month)', type: 'number', placeholder: '', required: true },
         ].map((field) => (
           <div key={field.id}>
             <label htmlFor={field.id} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
