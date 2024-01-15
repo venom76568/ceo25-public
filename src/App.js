@@ -6,18 +6,19 @@ import Timeline from "./components/Timeline1";
 import SignUpForm from "./components/Form";
 import Accordion from "./components/Faq";
 import Footer from "./components/Footer";
-// import Sponsers from "./components/Sponsers";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
-      <Hero/>
-      <About/>
-      <Timeline/>
-      <Accordion/>
-      <SignUpForm/>
-      {/* <Sponsers/> */}
-      <Footer/>
+      <Navbar />
+      <Hero />
+      <About />
+      <Timeline />
+      <Accordion />
+      <SignUpForm />
+
+      <Footer />
     </BrowserRouter>
   );
 }

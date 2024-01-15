@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "../assets/ceo.png";
+import Logo from "../assets/CEO_web.webp";
 
 const Hero = () => {
   return (
     <>
-      <div className=" w-full flex flex-col  bg-no-repeat bg-blend-overlay bg-center bg-cover items-center justify-center bg-[url(https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg)]">
+      <div className=" w-full h-screen flex flex-col  bg-no-repeat bg-blend-overlay bg-center bg-cover items-center justify-center bg-[url(https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg)]">
         <img
           className="flex justify-center items-center m-10"
           src={Logo}
