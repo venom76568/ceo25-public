@@ -7,9 +7,9 @@ const Accordion = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-            <h2 className="mb-2 pt-4 pb-5 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
-         FAQ
-    </h2>
+              <h2 className="w-full text-4xl xl:text-5xl text-center py-10 font-semibold text-[#00a4f9] uppercase">
+                FAQ
+              </h2>
               <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
                 Any Questions? Look Here
               </h2>
@@ -98,10 +98,9 @@ const AccordionItem = ({ header, text }) => {
   return (
     <div className="mb-8 w-full rounded-lg bg-gray-900 p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
       <button
-  className={`faq-btn flex w-full text-left`}
-  onClick={(event) => handleToggle(event)}
->
-
+        className={`faq-btn flex w-full text-left`}
+        onClick={(event) => handleToggle(event)}
+      >
         <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
           <svg
             className={`fill-primary stroke-primary duration-200 ease-in-out ${
