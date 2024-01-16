@@ -110,7 +110,7 @@ const SignUpForm = () => {
           </div>
           <div>
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Phone NUmber
+              Phone Number
             </label>
             <input
               type="text"
@@ -255,7 +255,7 @@ const SignUpForm = () => {
           
         )} */}
 
-        <div className="mb-6">
+        <div className="">
           {currentStep === 1 ? (
             <button
               type="button"
@@ -266,7 +266,7 @@ const SignUpForm = () => {
             </button>
           ) : (
             <>
-              <div className="flex items-start mb-6">
+              <div className="flex items-start">
                 <div className="flex items-center h-5">
                   <input
                     id="remember"
@@ -296,13 +296,15 @@ const SignUpForm = () => {
                   .
                 </label>
               </div>
+             
               <button
                 type="submit"
                 disabled={loading}
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full m-2 sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {loading ? "Loading..." : "Submit"}
               </button>
+             
               <p className="text-white">{message}</p>
             </>
           )}
