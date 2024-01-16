@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <About />
       <Timeline />
-      <Accordion />
+      {/* <Accordion /> */}
       <SignUpForm />
 
       <Footer />
