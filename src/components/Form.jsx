@@ -77,7 +77,7 @@ const SignUpForm = () => {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-white dark:bg-gray-900" id='register'>
       <h2 className="mb-2 pt-7 text-3xl font-bold text-center py-4 text-dark dark:text-white sm:text-4xl md:text-[40px]">
         {currentStep === 1 ? "Register" : "Additional Information"}
       </h2>
