@@ -18,7 +18,7 @@ function About() {
               become influential leaders.
             </p>
 
-            <a href="#reg">
+            <a href="#register">
               <button className="mt-5 bg-primary border-primary border rounded-md inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-black bg-[#00a4f9] disabled:bg-gray-3 disabled:border-gray-3 disabled:text-dark-5">
                 Register Now
               </button>
