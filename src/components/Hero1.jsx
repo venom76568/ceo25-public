@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/CEO_web.webp";
+import Brochure from "../assets/CEO Brochure.pdf"
 
 const Hero = () => {
   return (
@@ -25,7 +26,8 @@ const Hero = () => {
             </a>
 
             <a
-              href="https://driv"
+              href={Brochure}
+              download="CeoBrochure.pdf"
               className="flex self-center w-[250px] items-center justify-center px-4 py-4 text-xl text-white font-sans leading-6 capitalize duration-100 transform border-2 rounded-sm cursor-pointer border-blue-300 focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:-translate-y-1"
             >
               Brochure
