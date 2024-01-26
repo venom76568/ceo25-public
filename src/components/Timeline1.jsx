@@ -17,7 +17,7 @@ const TimelineItem = ({ date, title, description }) => {
 
 const Timeline = () => {
   return (
-    <div className="flex p-2 flex-col items-center justify-center h-full bg-gray-100 dark:bg-gray-800">
+    <div className="flex p-2 flex-col items-center justify-center h-full bg-gray-800">
       <h2 className="w-full text-4xl xl:text-5xl text-center py-10 font-semibold text-[#00a4f9] uppercase">
         Timeline
       </h2>

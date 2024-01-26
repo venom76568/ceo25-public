@@ -77,8 +77,8 @@ const SignUpForm = () => {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-900" id='register'>
-      <h2 className="mb-2 pt-7 text-3xl font-bold text-center py-4 text-dark dark:text-white sm:text-4xl md:text-[40px]">
+    <div className="bg-gray-900" id='register'>
+      <h2 className="mb-2 pt-7 text-3xl font-bold text-center py-4 text-white sm:text-4xl md:text-[40px]">
         {currentStep === 1 ? "Register" : "Additional Information"}
       </h2>
       <form className="max-w-md mx-auto w-[80vw]" onSubmit={handleSubmit}>
@@ -88,7 +88,7 @@ const SignUpForm = () => {
             { id: 'phone', label: 'Phone number', type: 'text', placeholder: 'Phone Number', required: true,name:'phone' },
           ].map((field) => ( */}
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            <label className="block mb-2 text-sm font-medium text-white">
               Full Name
             </label>
             <input
@@ -109,7 +109,7 @@ const SignUpForm = () => {
             <br />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            <label className="block mb-2 text-sm font-medium text-white">
               Phone Number
             </label>
             <input
@@ -134,7 +134,7 @@ const SignUpForm = () => {
         <div className="mb-6">
           <label
             htmlFor="email"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-white"
           >
             Email address
           </label>
@@ -159,7 +159,7 @@ const SignUpForm = () => {
               Up Expo
             </p>
             <div className="mb-6">
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label className="block mb-2 text-sm font-medium text-white">
                 Imagine you are the CEO of a tech company. With the rise of
                 artificial intelligence, how would you strategically position
                 your company for the next decade, considering both opportunities
@@ -179,7 +179,7 @@ const SignUpForm = () => {
               />
             </div>
             <div className="mb-6">
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label className="block mb-2 text-sm font-medium text-white">
                 If your company received negative publicity due to a product
                 issue, how would you rebuild customer trust and maintain a
                 customer-centric focus, ensuring long-term loyalty
@@ -196,7 +196,7 @@ const SignUpForm = () => {
               />
             </div>
             <div className="mb-6">
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label className="block mb-2 text-sm font-medium text-white">
                 If your company's brand image is at risk due to negative online
                 reviews and social media backlash, describe the steps you would
                 take to address the situation and rebuild a positive brand
@@ -214,7 +214,7 @@ const SignUpForm = () => {
               />
             </div>
             <div className="mb-6">
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label className="block mb-2 text-sm font-medium text-white">
                 During an economic downturn, how would you lead your company to
                 not only survive but also thrive, balancing cost-cutting
                 measures with strategic investments for future growth
@@ -231,7 +231,7 @@ const SignUpForm = () => {
               />
             </div>
             <div className="mb-6">
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label className="block mb-2 text-sm font-medium text-white">
                 You're leading a company planning to expand into a new
                 international market. Describe the key considerations,
                 challenges, and strategies you would employ to ensure a
@@ -284,7 +284,7 @@ const SignUpForm = () => {
                 </div>
                 <label
                   htmlFor="remember"
-                  className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="ms-2 text-sm font-medium text-gray-300"
                 >
                   I agree with the{" "}
                   <a
