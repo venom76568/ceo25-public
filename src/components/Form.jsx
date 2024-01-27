@@ -155,8 +155,7 @@ const SignUpForm = () => {
           <>
             {/* Additional fields for the second step */}
             <p className="mb-2 pt-7 text-m font-bold text-center py-4 text-dark dark:text-white sm:text-l md:text-[20px]">
-              Answer the following question to successfully Register for Start
-              Up Expo
+              Answer the following question to successfully Register for CEO
             </p>
             <div className="mb-6">
               <label className="block mb-2 text-sm font-medium text-white">
