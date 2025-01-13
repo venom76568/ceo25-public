@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/CEO_web.webp";
-import Brochure from "../assets/CEO Brochure.pdf"
+import Brochure from "../assets/CEO Brochure 25.pdf"
 
 const Hero = () => {
   return (
