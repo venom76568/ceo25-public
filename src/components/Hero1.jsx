@@ -13,7 +13,7 @@ const Hero = () => {
         />
 
         <h1 className="text-center text-3xl sm:text-6xl font-bold text-[#00a4f9] pt-5">
-          UNCOVER THE FUTURE LEADERS.
+          Cultivate. Execute. Outperform.
         </h1>
 
         <div className="justify-center items-center text-center flex flex-row">
