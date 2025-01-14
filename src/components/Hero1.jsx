@@ -5,7 +5,7 @@ import Brochure from "../assets/CEO Brochure 25.pdf"
 const Hero = () => {
   return (
     <>
-      <div className=" w-full h-screen flex flex-col  bg-no-repeat bg-blend-overlay bg-center bg-cover items-center justify-center bg-[url(https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg)]">
+      <div className=" w-full h-screen flex flex-col  bg-no-repeat bg-blend-overlay bg-center bg-cover items-center justify-center bg-[url(https://media-hosting.imagekit.io//36afcca8560640da/h01.gif?Expires=1831473055&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0NIxk5tcozpoyjNbkkyFsuMCvZ7j0UrStrNTM79ieCrD3MgsFzZy7LYzFz8~6PiIvo2asFg2BTNp5KgCAf2~yp4xCCm2t5-sA1PRG-Hm8~zYSAbqaiK-Wthj~TpwRQIT32fslQcS6~YMmgycq45SbKTeshl1hxCpMs9IVcMlc~e3vN52OuPc4pE1Sh9WvfMAWvGI-7VUoYFX7C9SKUiYZDHyLxLkehpkjOuy1eFVekS07-5Rox3BnOlxxz3qBjjJ0g9HWllX~IcuSiD2JUDXYkWmotjuWFsjr2V-mTeoWvkGlf8wfIgAk6PicSlPnL9W77FUfttVQJVC4b8IJRnjAw__)]">
         <img
           className="flex justify-center items-center m-10"
           src={Logo}
