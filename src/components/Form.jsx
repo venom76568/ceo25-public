@@ -194,7 +194,7 @@ const SignUpForm = () => {
               value={formData.year}
               onChange={handleChange}
             />
-            <span style={{ color: "red" }}>{errors.name}</span>
+            <span style={{ color: "red" }}>{errors.year}</span>
             <br />
           </div>
         {currentStep === 2 && (
