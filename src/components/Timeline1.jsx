@@ -23,27 +23,27 @@ const Timeline = () => {
       </h2>
       <ol className="relative max-w-2xl">
         <TimelineItem
-          date="10 January 2024"
+          date="15 January 2025"
           title="Registration Starts"
           description="Registration for the event starts"
         />
         <TimelineItem
-          date="5 February 2024"
+          date="31 January 2025"
           title="Registration Ends"
           description="Registration for the event ends"
         />
         <TimelineItem
-          date="10 February 2024"
+          date="08 February 2025"
           title="Group Discussion"
           description="Group discussion is conducted for the registered participants"
         />
         <TimelineItem
-          date="11 February 2024"
+          date="08 February 2025"
           title="Case Study Competition"
           description="Case study competition challenges teams to analyze real-world market scenarios and provide innovative solutions"
         />
         <TimelineItem
-          date="11 February 2024"
+          date="09 February 2025"
           title="Board Room Discussion"
           description="Board room discussion is conducted for the shortlisted teams"
         />

@@ -11,7 +11,7 @@ export const validateEmail = (email) => {
   };
   
   export const validateForm = (formData) => {
-    const { name, phone, email } = formData;
+    const { name, phone, email, college, year } = formData;
     const errors = {};
   
     if (!name || !phone || !email) {

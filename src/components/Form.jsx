@@ -15,11 +15,15 @@ const SignUpForm = () => {
     phone: "",
     email: "",
     box: "",
+    college: "",
+    year: "",
     question1: "",
     question2: "",
     question3: "",
     question4: "",
     question5: "",
+    question6: "",
+    question7: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -151,6 +155,49 @@ const SignUpForm = () => {
           <span style={{ color: "red" }}>{errors.email}</span>
           <br />
         </div>
+        <div>
+            <label className="block mb-2 text-sm font-medium text-white">
+              College Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Your College Name Here"
+              // pattern={field.pattern}
+              
+              // value={formData.field.name}
+              // value={formData[field.name]}
+              // onChange={handleChange}
+              name="college"
+              value={formData.college}
+              onChange={handleChange}
+            />
+            <span style={{ color: "red" }}>{errors.college}</span>
+            <br />
+          </div>
+          <div>
+            <label className="block mb-2 text-sm font-medium text-white">
+              College Year
+            </label>
+            <input
+              type="text"
+              id="year"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Your College Year Here"
+              // pattern={field.pattern}
+              
+              // value={formData.field.name}
+              // value={formData[field.name]}
+              // onChange={handleChange}
+              name="year"
+              value={formData.year}
+              onChange={handleChange}
+            />
+            <span style={{ color: "red" }}>{errors.year}</span>
+            <br />
+          </div>
+        
         {currentStep === 2 && (
           <>
             {/* Additional fields for the second step */}
@@ -159,10 +206,8 @@ const SignUpForm = () => {
             </p>
             <div className="mb-6">
               <label className="block mb-2 text-sm font-medium text-white">
-                Imagine you are the CEO of a tech company. With the rise of
-                artificial intelligence, how would you strategically position
-                your company for the next decade, considering both opportunities
-                and threats?
+                A pandemic has disrupted your global supply chain, delaying your product delivery by months. 
+                What steps would you take to mitigate the impact while ensuring customer satisfaction?
               </label>
               <textarea
                 id="question1"
@@ -179,9 +224,8 @@ const SignUpForm = () => {
             </div>
             <div className="mb-6">
               <label className="block mb-2 text-sm font-medium text-white">
-                If your company received negative publicity due to a product
-                issue, how would you rebuild customer trust and maintain a
-                customer-centric focus, ensuring long-term loyalty
+                Your early-stage startup is receiving conflicting advice from investors, mentors, and your team. 
+                How would you decide whose input to prioritize?
               </label>
               <textarea
                 id="question2"
@@ -196,10 +240,8 @@ const SignUpForm = () => {
             </div>
             <div className="mb-6">
               <label className="block mb-2 text-sm font-medium text-white">
-                If your company's brand image is at risk due to negative online
-                reviews and social media backlash, describe the steps you would
-                take to address the situation and rebuild a positive brand
-                reputation
+                You’re building a product for a market that doesn’t yet exist (e.g., space tourism). 
+                What steps would you take to educate customers and create demand?
               </label>
               <textarea
                 id="question3"
@@ -214,9 +256,8 @@ const SignUpForm = () => {
             </div>
             <div className="mb-6">
               <label className="block mb-2 text-sm font-medium text-white">
-                During an economic downturn, how would you lead your company to
-                not only survive but also thrive, balancing cost-cutting
-                measures with strategic investments for future growth
+                A cybersecurity breach has leaked customer data from your company. 
+                How would you respond to the situation and ensure it doesn’t harm your company’s reputation further?
               </label>
               <textarea
                 id="question4"
@@ -231,10 +272,8 @@ const SignUpForm = () => {
             </div>
             <div className="mb-6">
               <label className="block mb-2 text-sm font-medium text-white">
-                You're leading a company planning to expand into a new
-                international market. Describe the key considerations,
-                challenges, and strategies you would employ to ensure a
-                successful market entry.
+                Estimate the number of electric vehicles that will be sold in India in the next five years. 
+                How would this influence your decision to launch an EV charging station business?
               </label>
               <textarea
                 id="question5"
@@ -243,6 +282,39 @@ const SignUpForm = () => {
                 className="resize-none bg-gray-50 border h-20 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Answer within 200 words"
                 value={formData.question5}
+                required
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mb-6">
+              <label className="block mb-2 text-sm font-medium text-white">
+                A rival startup with a similar product is gaining attention due to an aggressive influencer marketing campaign. 
+                How would you differentiate your brand to stand out?
+              </label>
+              <textarea
+                id="question6"
+                name="question6"
+                rows="3"
+                className="resize-none bg-gray-50 border h-20 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Answer within 200 words"
+                value={formData.question6}
+                required
+                onChange={handleChange}
+              />
+              
+            </div>
+            <div className="mb-6">
+              <label className="block mb-2 text-sm font-medium text-white">
+                Your company’s burn rate is high, and cash reserves will last only 6 months. 
+                What steps would you take to extend the runway while maintaining key operations?
+              </label>
+              <textarea
+                id="question7"
+                name="question7"
+                rows="3"
+                className="resize-none bg-gray-50 border h-20 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Answer within 200 words"
+                value={formData.question7}
                 required
                 onChange={handleChange}
               />
